@@ -41,8 +41,8 @@ KnnData knn(py::array_t<float> ref, py::array_t<float> query, int k) {
 
     float knn_dist[N_query*k];
     int knn_index[N_query*k];
-
-    knn_cublas(ptr_ref, N_ref, ptr_query, N_query, dim_query, k, knn_dist, knn_index);
+    
+    knn_cuda_global(ptr_ref, N_ref, ptr_query, N_query, dim_query, k, knn_dist, knn_index);
 
     return_object.knn_dist = py::array_t<float>({N_query, k}, knn_dist);
     return_object.knn_index = py::array_t<int>({N_query, k}, knn_index);
