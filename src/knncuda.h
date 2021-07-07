@@ -26,9 +26,9 @@ bool knn_cuda_global(const float * ref,
  * This implementation uses texture memory for storing reference points  and memory to store query points.
  *
  * @param ref        refence points
- * @param ref_um     number of reference points
+ * @param ref_num     number of reference points
  * @param query      query points
- * @param query_um   number of query points
+ * @param query_num   number of query points
  * @param dim        dimension of points
  * @param k          number of neighbors to consider
  * @param knn_dist   output array containing the query_nb x k distances
