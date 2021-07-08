@@ -1,6 +1,6 @@
 # K-Nearest Neighbor using GPU
 
-This repository contains a python wrapper for the [K Nearest Neighbor CUDA library](https://github.com/vincentfpgarcia/kNN-CUDA). The wrapper is written using Pybind11. 
+This repository contains a python wrapper for the KNN algorithm written in Cuda. For the python wrapper credit to DylanWusee. KNN algorithm is written using Cuda C++. The Kernel is changed to our implementation. For the implementation I am inspired from vincentfpgarcia and unlimblue's implementations.
 
 
 # Installation
